@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-layout{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.item-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-1:hover{
+    background-color: blue;
+}
+.item-2:hover{
+    background-color: green;
+}
+.item-3:hover{
+    background-color: yellow;
+}
+.item-4:hover{
+    background-color: red;
+}
+.nav-div, nav{
+    z-index: 9999;
+}
+
+.hero-grid{
+    background-image: url("./images/grid.png");
+    background-size: cover;
+}
+.hero-grid-contain{
+    background-image: url("./images/grid.png");
+    background-size: contain;
+}
+
+.custom-btn-bg{
+    background-image: url("./images/grid.png");
+    background-size: contain;
+}
+.onama-godine svg{
+    height: 50px;
+}
+.cbr{
+    -webkit-border-top-left-radius: 48px;
+    -webkit-border-top-right-radius: 48px;
+    -moz-border-radius-topleft: 48px;
+    -moz-border-radius-topright: 48px;
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+    border: 2px solid #1D1D1D;
+    /*transition: 3;*/
+    /*// &:hover {*/
+    /*//   transform: translateY(-20px);*/
+    /*// }*/
+}
+.csr{
+    -webkit-border-top-left-radius: 24px;
+    -webkit-border-top-right-radius: 24px;
+    -moz-border-radius-topleft: 24px;
+    -moz-border-radius-topright: 24px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border: 2px solid #1D1D1D;
+}
+.custom-btn{
+    -webkit-border-top-left-radius: 24px;
+    -webkit-border-top-right-radius: 24px;
+    -moz-border-radius-topleft: 24px;
+    -moz-border-radius-topright: 24px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+.grid-overlay{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.grid-overlay div{
+    border: 1px solid rgba(255,255,255,0.4);
+    transition: 0.37s all ease-in-out;
+}
+#SwiperSingleMovie:hover .grid-overlay div{
+    border:0;
+}
+#HomeSwiper:hover .grid-overlay div{
+    border:0;
+}
+.grid-overlay div[data-grid-item="1"]:hover{
+    background-color: white;
+}
+.grid-overlay div[data-grid-item="2"]:hover,
+.grid-overlay div[data-grid-item="7"]:hover,
+.grid-overlay div[data-grid-item="12"]:hover,
+.grid-overlay div[data-grid-item="14"]:hover {
+    background-color: green;
+}
+
+.grid-overlay div[data-grid-item="3"]:hover,
+.grid-overlay div[data-grid-item="6"]:hover,
+.grid-overlay div[data-grid-item="9"]:hover,
+.grid-overlay div[data-grid-item="11"]:hover{
+    background-color: yellow;
+}
+
+.grid-overlay div[data-grid-item="4"]:hover,
+.grid-overlay div[data-grid-item="8"]:hover,
+.grid-overlay div[data-grid-item="13"]:hover,
+.grid-overlay div[data-grid-item="16"]:hover {
+    background-color: blue;
+}
+
+.grid-overlay div[data-grid-item="5"]:hover,
+.grid-overlay div[data-grid-item="10"]:hover,
+.grid-overlay div[data-grid-item="15"]:hover {
+    background-color: red;
+}
+.swiper-button-prev{
+    color: #ffffff;
+    height: 100%;
+    top: 0;
+    left:0;
+    background-color: transparent;
+    transition: 0.27s all ease;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.swiper-button-next{
+    color: #ffffff;
+    height: 100%;
+    top: 0;
+    right:0;
+    background-color: transparent;
+    transition: 0.27s all ease;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    background-color: blue;
+}
+/*Swiper Custom Code*/
+.custom-swiper .swiper-pagination-bullet.square-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    background-color: #fff;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.custom-swiper .swiper-pagination-bullet.square-bullet.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #fff;
+    transform: scale(1.2);
+}
+.highlighted-heading{
+    position: relative;
+    z-index: 400;
+}
+.highlighted-heading > .red-highlight-heading, .blue-highlight-heading, .green-highlight-heading{
+    bottom: 3px;
+    z-index: -85;
+}
+.highlighted-word{
+    position: relative;
+    z-index: 400;
+}
+.highlighted-word > .red-highlight,.blue-highlight,.green-highlight{
+    bottom: -9px;
+    z-index:-85;
+}
+.red-highlight{
+    position: absolute;
+    left: 0;
+    height: 22px;
+    width: 100%;
+    opacity: 65%;
+    background-color: red;
+}
+.green-highlight{
+  position: absolute;
+    left: 0;
+    height: 22px;
+    width: 100%;
+    opacity: 65%;
+    background-color: green;
+}
+.blue-highlight{
+   position: absolute;
+    left: 0;
+    height: 22px;
+    width: 100%;
+    opacity: 65%;
+    background-color: blue;
+}
+.red-highlight-heading{
+    position: absolute;
+    left: 0;
+    height: 22px;
+    width: 100%;
+    opacity: 65%;
+    background-color: red;
+}
+.green-highlight-heading{
+  position: absolute;
+    left: 0;
+    height: 22px;
+    width: 100%;
+    opacity: 65%;
+    background-color: green;
+}
+.blue-highlight-heading{
+   position: absolute;
+    left: 0;
+    height: 22px;
+    width: 100%;
+    opacity: 65%;
+    background-color: blue;
+}
+.movie-info > div:nth-child(odd) > .movie-info-headline:hover{
+    background-color: yellow;
+}
+.movie-info > div:nth-child(even) > .movie-info-headline:hover{
+    background-color: blue;
+}
+.movie-info > div:nth-child(even) > .movie-info-data:hover{
+    background-color: yellow;
+}
+.movie-info > div:nth-child(odd) > .movie-info-data:hover{
+    background-color: blue;
+}
+
+#GridMovies > div:nth-child(1n):hover{
+    background-color: blue;
+}
+#GridMovies > div:nth-child(2n):hover{
+    background-color: green;
+}
+#GridMovies > div:nth-child(3n):hover{
+    background-color: yellow;
+}
+#GridMovies > div:nth-child(4n):hover{
+    background-color: red;
+}
+
+#TopFive > .top-five-wrapper:hover .grid-overlay div{
+    border: 0;
+}
