@@ -9,7 +9,7 @@ const Kontakt = () => {
             <section className='lg:max-w-[1500px] mx-auto px-4'>
                 <h1 className='text-6xl font-heading text-center py-12'>Kontakt</h1>
                 <div>
-                    <h2 className='text-center md:text-start text-4xl font-heading mb-4'>Korisnička podrška</h2>
+                    <h2 className='text-center text-4xl font-heading mb-4'>Korisnička podrška</h2>
                     <div className="cbr dark:border-darkModeLight">
                         <div className='px-4 py-12 flex justify-between items-center text-heading'>
                             <h3 className='font-heading'>Email</h3>
@@ -22,7 +22,7 @@ const Kontakt = () => {
                     </div>
                 </div>
                 <div className='mt-12'>
-                    <h2 className='text-center md:text-start text-4xl font-heading mb-6'>Lokacija</h2>
+                    <h2 className='text-center text-4xl font-heading mb-6'>Lokacija</h2>
                     <div>
                         <div className='relative cbr'>
                             <iframe

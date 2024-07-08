@@ -41,11 +41,18 @@ const Film = () => {
             <Navbar/>
             <h1 className='font-heading text-6xl text-center py-12 md:text-big-headings'>{movie.title}</h1>
             {
-                showWatchMovieModal ? <div id='WatchMovieModal'
-                                           className='fixed flex items-center justify-center bg-blue z-40 h-[80vh] w-[80%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-                    <FaPlay className='text-heading cursor-pointer' />
-                    <MdClose onClick={handleModal} className='absolute top-12 right-12 text-5xl cursor-pointer'/>
-                </div> : ''
+                showWatchMovieModal ? (
+                    <div id='WatchMovieModal'
+                        className='fixed flex items-center justify-center bg-blue z-40 h-[80vh] w-[80%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+                        <FaPlay className='text-heading cursor-wait z-40' />
+                        <MdClose onClick={handleModal} className='absolute z-40 top-12 right-12 text-5xl cursor-pointer'/>
+                        <div className='absolute w-full h-full grid grid-cols-5 items-center text-center justify-center'>
+                            {Array.from({ length: 65 }, (_, index) => (
+                                <p key={index} className='text-light text-2xl font-heading opacity-50'>{movie.title}</p>
+                            ))}
+                        </div>
+                    </div>
+                ) : ''
             }
             <div className="mt-4 mx-auto">
                 <Swiper

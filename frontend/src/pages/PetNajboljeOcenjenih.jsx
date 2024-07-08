@@ -38,7 +38,7 @@ const PetNajboljeOcenjenih = () => {
                                     </div>
                                     <h2 className='relative z-40 font-heading text-heading text-white dark:text-darkModeLight'>{movie.title}</h2>
                                 </div>
-                                <div className='flex justify-evenly items-center mt-6 mb-48'>
+                                <div className='flex flex-col md:flex-row justify-evenly items-center mt-6 mb-48'>
                                     <p className='font-heading text-heading flex items-center gap-2'>{String(movie.rating).length === 1 ? movie.rating + ".0" : movie.rating}<FaRegStar className='mb-3' /></p>
                                     <p className='font-heading text-heading'>{movie.director}</p>
                                     <Link to={`/filmovi/${movie.slug}`} className='font-heading text-heading hover:bg-red'>
