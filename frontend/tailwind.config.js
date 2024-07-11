@@ -12,6 +12,7 @@ export default {
         red: '#ff0000',
         green: '#00ff00',
         blue: '#0000ff',
+        yellow: '#ffff00',
         overlay: 'rgba(0,0,0,0.7)',
         // darkModeBlack: '#37474F',
         darkModeBlack: 'rgb(28,28,33)',

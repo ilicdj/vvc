@@ -6,7 +6,7 @@ const Kontakt = () => {
     return (
         <>
             <Navbar/>
-            <section className='lg:max-w-[1500px] mx-auto px-4'>
+            <section className='lg:max-w-[1300px] mx-auto px-4'>
                 <h1 className='text-6xl font-heading text-center py-12'>Kontakt</h1>
                 <div>
                     <h2 className='text-center text-4xl font-heading mb-4'>Korisnička podrška</h2>

@@ -109,8 +109,7 @@ const Navbar = () => {
                    onMouseLeave={handleMenuLeave} className="nav-div fixed bg-dark text-light p-8 h-screen mx-auto dark:bg-darkModeLight dark:text-darkModeBlack">
                 <nav
                     className='hidden flex-col items-center text-center justify-center py-8 px-4 lg:flex '>
-                    <h2 className='text-heading font-heading py-8 md:py-0 md:border-t-0 flex justify-center items-center dark:border-darkModeLight'>Vintage
-                        Video Club</h2>
+                    <h2 className='text-heading font-heading py-8 md:py-0 md:border-t-0 flex justify-center items-center dark:border-darkModeLight mb-4 text-yellow dark:text-dark'><Link to={`/`} className='font-heading text-3xl'>Vintage Video Club</Link></h2>
                     <ul className='flex flex-col gap-5 border-2 border-light p-6 dark:border-darkModeBlack'>
                         <li className='font-heading text-heading'><Link to='/'>Početna</Link></li>
                         <li className='font-heading text-heading'><Link to='/o-nama'>O nama</Link></li>
